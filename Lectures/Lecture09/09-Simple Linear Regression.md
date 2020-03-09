@@ -136,9 +136,9 @@ J(x,θ,y) = (1/2m)sum((ŷ-y)^2)
 
 ∇θJ
 - J(x,θ,y) = (1/2m)sum((θ^T(xbar)-y)^2)
-- dJ/dθ = (1/2m)sum(2(θ^T(xbar)-y)(d/dθ(θ^T(xbar)-y)))
-- dJ/dθ = (1/m)sum((θ^T(xbar)-y)(xbar))
-- dJ/dθ = (1/m)sum((ŷ-y)(xbar))
+- δJ/δθ = (1/2m)sum(2(θ^T(xbar)-y)(d/dθ(θ^T(xbar)-y)))
+- δJ/δθ = (1/m)sum((θ^T(xbar)-y)(xbar))
+- δJ/δθ = (1/m)sum((ŷ-y)(xbar))
 
 Use gradient descent to change θ^T
 - θ+ = (θ-)-α(∇θJ)

@@ -67,3 +67,12 @@ Precision = TP/(TP + FP)
 - Out of all the positive classes we have predicted correctly, how many are actually positive
 Acuracy = (TP+TN)/Total
 - Out of all classes, how much did we predict correctly
+
+## Assumptions
+There is minimal or no mutlicollinearity between independent variables
+
+Independent variables are linearly related to the log of odds of the dependent variable
+- y = 1/(1+e^(-x))
+Requires a large sample size to predict properly
+
+Observations are independent of each other

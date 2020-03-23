@@ -102,6 +102,7 @@ sum(yi-yhat)^2 = 1.95
 ### SSR & SST
 SST = Sum of Squared Total
 - Equals SSE when no independent variable used in the model
+
 SSR = Sum of Squared Regression
 - SSR = SST - SSE
 

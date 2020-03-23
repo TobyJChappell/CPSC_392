@@ -102,6 +102,7 @@ sum(yi-yhat)^2 = 1.95
 ### SSR & SST
 SST = Sum of Squared Total
 - Equals SSE when no independent variable used in the model
+
 SSR = Sum of Squared Regression
 - SSR = SST - SSE
 
@@ -117,14 +118,17 @@ r^2 = 18.05/20 = 0.9025 = 90.25%
 
 y = h(x,θ) 
 - hypothesis function
+
 ŷ = h(x,θ) + ε
 - ε ~ N(0,1)
+
 ŷ = θ0 + θ1x
 
 ŷ = θ^T(xbar)
 - θ^T = \[θ0,θ1]
 - xbar = \[1,x1]
 - θ^T(xbar) = θ0 + θ1x
+
 θ^T = \[θ0,θ1,...,θn]
 
 xbar = \[1,x1,...,xn]
@@ -160,10 +164,12 @@ Linear Regression has 4 key assumptions
 - Multivariate normality (histogram)
 - No or little multicollinearity
 - Homoscedasticity (residuals are equal across the best fit line)
+
 Simple Linear Regression can be done using the OLS and the Gradient Descent method
 - Each method tries to optimize the slope and intercept parameters
 - OLS tries to minimize the SSE
 - GD minimizes the cost function
+
 Linear Regression is applied using continuous data, to predict continuous data
 
 You can compare R-squared values, split the data into training and testing sets, and conduct k-fold validation to assess the model performance

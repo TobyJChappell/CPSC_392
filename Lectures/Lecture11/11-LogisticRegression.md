@@ -2,12 +2,14 @@
 ## Machine Learning
 Supervised Learning
 - Train machine using data which is already labeled with the correct answer
+
 Unsupervised Learning
 - Machine finds patters or discovers information on its own
 
 ### Supervised Learning
 Regression
 - Predicts a single output value using training data
+
 Classification
 - Group the output inside a class or category
 
@@ -34,11 +36,14 @@ Hours | Passed
 Given a number of hours spent studying, did I pass?
 - P(yi = 1 | xiθ) = θ^T(xbar)
     * Probability that a given dependent value is 1 given same x and same parameters θ
+    
 h(x) = σ(θ^T(xbar)) = 1/(1+e^(-θ^T(xbar)))
 - σ = sigmoid/logistic function
+
 P(yi = 1 | xiθ) = 1-h(x)
 P(yi = 1 | xiθ) = h(xi)^yi(1-h(x))^(1-yi)
 - Bernoulli Distribution => very good for binary classification
+
 The entire data: x, y
 - L(θ) = P(yi = 1 | xiθ) = ∏(h(xi)^yi(1-h(xi))^(1-yi)
     * L(θ) is the likelihood function for θ
@@ -51,6 +56,7 @@ The entire data: x, y
     * δσ/δθ(θ^T(xbar)) = δσ(θ^T(xbar))/δσ(θ^T(xbar))\*δ(θ^T(xbar))/δθ
     * = σ(θ^T(xbar))(1-σ(θ^T(xbar)))
 - δℒ(θ)/δθ = y-σ(θ^T(xbar))xbar = y-σ(h(x))xbar
+
 θ+ = (θ-)+α(δℒ(θ)/δθ)
 
 ## Confusion Matrix
@@ -63,8 +69,10 @@ Displays predicted values vs. actual values
 ### Confusion Matrix (Measures)
 Recall = TP/(TP+FN)
 - Out of all the positive classes, how much we predicted correctly (should be as high as possible)
+
 Precision = TP/(TP + FP)
 - Out of all the positive classes we have predicted correctly, how many are actually positive
+
 Acuracy = (TP+TN)/Total
 - Out of all classes, how much did we predict correctly
 
@@ -73,6 +81,7 @@ There is minimal or no mutlicollinearity between independent variables
 
 Independent variables are linearly related to the log of odds of the dependent variable
 - y = 1/(1+e^(-x))
+
 Requires a large sample size to predict properly
 
 Observations are independent of each other
